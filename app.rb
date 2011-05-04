@@ -6,6 +6,7 @@ require 'grit'
 require 'hashie'
 require 'json'
 require 'logger'
+require 'net/http' # is not a gem
 
 # put the LIB directory on the load path
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
