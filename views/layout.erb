@@ -1,0 +1,3 @@
+<%= Net::HTTP.get URI.parse('http://dasypygal.dyndns.org/partial/head') %>
+<%= yield %>
+<%= Net::HTTP.get URI.parse('http://dasypygal.dyndns.org/partial/foot') %>
