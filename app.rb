@@ -12,7 +12,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
 
 Wikiupdate = Hashie::Mash.new
 Wikiupdate.root = File.dirname(__FILE__)
-logfile = File.open("#{Wikiupdate.root}/updates.log", 'w')
+logfile = File.open("#{Wikiupdate.root}/updates.log", 'a+')
 Wikiupdate.log = Logger.new("#{Wikiupdate.root}/updates.log")
 Wikiupdate.log.level = Logger::DEBUG
 
