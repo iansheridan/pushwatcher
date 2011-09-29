@@ -4,6 +4,8 @@ A simple sinatra application that waits for a push notice from githup logs the a
 
 ## Install
 
+    git clone git://github.com/iansheridan/pushwatcher.git
+    cd pushwatcher
     gem install bundler
     bundle install
 
