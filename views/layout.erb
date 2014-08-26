@@ -1,3 +1,9 @@
-<%= Net::HTTP.get URI.parse('http://dasypygal.dyndns.org/partial/head') %>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>PushWatcher</title>
+</head>
+<body>
 <%= yield %>
-<%= Net::HTTP.get URI.parse('http://dasypygal.dyndns.org/partial/foot') %>
+</body>
+</html>

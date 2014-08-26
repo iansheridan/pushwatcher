@@ -11,11 +11,11 @@ require 'net/http' # is not a gem
 # put the LIB directory on the load path
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
 
-Wikiupdate = Hashie::Mash.new
-Wikiupdate.root = File.dirname(__FILE__)
-logfile = File.open("#{Wikiupdate.root}/updates.log", 'a+')
-Wikiupdate.log = Logger.new("#{Wikiupdate.root}/updates.log")
-Wikiupdate.log.level = Logger::DEBUG
+Update = Hashie::Mash.new
+Update.root = File.dirname(__FILE__)
+logfile = File.open("#{Update.root}/updates.log", 'a+')
+Update.log = Logger.new("#{Update.root}/updates.log")
+Update.log.level = Logger::DEBUG
 
 # load application parts ============================================
 load 'routes.rb'

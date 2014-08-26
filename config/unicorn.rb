@@ -1,4 +1,4 @@
-APP_ROOT = "/var/apps/wiki-update/current"
+APP_ROOT = "/var/apps/update/current"
 
 worker_processes 4
 working_directory APP_ROOT
